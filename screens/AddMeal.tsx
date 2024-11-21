@@ -33,7 +33,7 @@ export default function FilterScreen() {
 
     const handleCourseChange = (selectedCourse: string) => {
         setCourse(selectedCourse);
-        setMealOptions(mealData[selectedCourse] || []); // Update available meal options based on course
+        setMealOptions(mealData[selectedCourse] || []); 
     };
 
     return (
