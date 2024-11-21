@@ -9,7 +9,7 @@ type HomeScreenProp = StackNavigationProp<RootStackParamList, 'Home'>;
 export default function HomeScreen({ route }: { route: RouteProp<RootStackParamList, 'Home'> }) {
     const navigation = useNavigation<HomeScreenProp>();
 
-    // Updated initial meals with the new dishes added to their respective courses
+    
     const initialMeals: Meal[] = [
         { Name: 'Bruschetta Trio', Description: 'Grilled baguette topped with tomato-basil salsa, roasted pepper and feta, and olive tapenade.', Course: 'Starters', Price: 6.99 },
         { Name: 'Shrimp Cocktail', Description: 'Chilled shrimp served with a zesty cocktail sauce.', Course: 'Starters', Price: 10.99 },
