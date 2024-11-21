@@ -49,4 +49,3 @@ const styles = StyleSheet.create({
     mealDetails: { padding: 10, marginVertical: 5, borderColor: '#ccc', borderWidth: 1, borderRadius: 8 },
     input: { borderWidth: 1, padding: 8, marginBottom: 12 }
 });
-jkk
