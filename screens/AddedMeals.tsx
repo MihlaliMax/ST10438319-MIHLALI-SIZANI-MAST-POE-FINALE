@@ -4,7 +4,7 @@ import { RouteProp } from '@react-navigation/native';
 import { RootStackParamList, Meal } from './RootStackParams';
 
 export default function AddedMealsScreen() {
-    const [addedMeals, setAddedMeals] = useState<Meal[]>([]); // Initialize with an empty array
+    const [addedMeals, setAddedMeals] = useState<Meal[]>([]);
     const [newMeal, setNewMeal] = useState<Meal>({ Name: '', Description: '', Course: '', Price: 0 });
 
     const addMeal = () => {
@@ -12,6 +12,8 @@ export default function AddedMealsScreen() {
         setNewMeal({ Name: '', Description: '', Course: '', Price: 0 });
     };
 
+
+    // Function to remove a meal from the list by index
     const removeMeal = (index: number) => {
         const updatedMeals = addedMeals.filter((_, i) => i !== index);
         setAddedMeals(updatedMeals);
