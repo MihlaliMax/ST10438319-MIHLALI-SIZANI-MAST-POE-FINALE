@@ -9,3 +9,4 @@ export type RootStackParamList = {
 import AddedMealsScreen from './AddedMeals';
 
 <Stack.Screen name="AddedMeals" component={AddedMealsScreen} />
+yuikj
